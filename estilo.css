@@ -1,0 +1,326 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(214, 240, 240);
+    
+}
+ h2{
+    font-size: 50px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+}
+/* pagina pricipal*/
+
+.menu-navegacion{
+    background-color: rgb(9, 122, 156);
+    padding: 0;
+    list-style-type: none;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 768px){
+    .menu-navegacion{
+        flex-direction: row;
+       
+    }
+}
+
+
+.menu-navegacion li{
+    display: inline-block;
+    text-align: center;
+}
+.menu-navegacion li a{
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.menu-navegacion li a:hover{
+    color: brown;
+    background-color: rgb(250, 216, 66);
+    border-radius: 50%;
+}
+.menu-servicios{
+         display: flex;
+         justify-content:space-evenly;
+         flex-direction: column;
+         text-align: center;
+}
+@media (min-width: 768px){
+    .menu-servicios{
+        flex-direction: row;
+    }
+}
+
+.servicios{
+    width: 400px;
+    height: 400px;
+    padding: 1rem;
+    margin: 1rem;  
+   
+}
+.tipo-servicios{
+    padding: 1rem;
+}
+.tipo-servicios h3{
+    text-align: center;
+}
+.tipo-servicios p{
+    text-align: center;
+}
+.icono1{
+    height:10rem;
+    width: 10rem;
+}
+.fotoicono1{
+    height: 10rem;
+    width: 20rem;
+}
+
+.icono1{
+    background-image: url(./imagenes/Form-1.jpg);
+    background-repeat: no-repeat;
+    transition: all 2s ease;
+    text-align: center;
+}
+.icono2{
+    height:10rem;
+    width: 10rem;
+}
+.fotoicono2{
+    height: 10rem;
+    width: 20rem;
+}
+
+.icono2{
+    background-image: url(./imagenes/casa-lujo1.jpg);
+    background-repeat: no-repeat;
+    transition: all 2s ease;
+}
+.icono3{
+    height:10rem;
+    width: 10rem;
+}
+.icono3{
+    background-image: url(./imagenes/listo.jfif);
+    background-repeat: no-repeat;
+    transition: all 2s ease;
+}
+
+
+.tipo-servicios:hover{
+    transform: scale(1.2, 1.2);
+}
+.hero{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}  
+
+.hero-imagen{
+    width: 100%;
+
+}
+.imagen-hero {
+    background-image: url(./imagenes/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+.imagen-hero2{
+    width: 50%;
+}
+
+.hero p{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+.boton{
+    background-color: green;
+    color: white;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 16px;
+}
+.boton:hover{
+    cursor: pointer;
+}
+.botonw-100{
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+
+/* footer*/
+.futer{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    text-align: center;
+}
+@media (min-width: 768px){
+.futer{
+   flex-direction: row;
+}
+}
+
+
+.fcontacto{
+    width: 500px;
+    height: 200px;
+    padding: 36px;
+    margin: 36px; 
+    
+}
+.futercontacto{
+    padding: 1rem;
+    
+}
+.face{
+    width: 20px;
+}
+
+/* pagina de servicio 1 aqui se usa grid */
+
+.contenedor-uno{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+@media (min-width: 768px){
+   .contenedor-uno{
+    flex-direction: row;
+   }
+}
+
+.servi-uno{
+    border: rgb(15, 15, 15) 6px solid;
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    border-radius: 1rem;
+}
+.contenedor-dos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+@media (min-width: 768px){
+    .contenedor-dos{
+     flex-direction: row;
+    }
+ }
+.parrafo{
+    padding: 16px;
+    text-align: center;
+    font-size: 32px;
+    margin: 32px;
+}
+
+
+.servi-unodos{
+    border: rgb(20, 190, 28) 6px solid;
+    background-color: whitesmoke;
+    width: 400px;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.servi-uno{
+    
+    transition: all 2s ease;
+}
+.servi-uno:hover{
+    transform: scale(1.2, 1.2);
+}
+
+/*contacto*/
+
+.formulario{
+    background-color: grey;
+    width: min( 600px, 100%);
+    padding: 2rem;
+    margin: 0 auto;
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: yellow;
+}
+
+.campo{
+    margin-bottom: 16px;
+
+}
+.campo label{
+    color: white;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.campo textarea{
+    height: 20rem;
+}
+.inpunt-text{
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+/* aqui seccion carrusel*/
+.carrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel-contenido{
+    width: 200px;
+    height: 200px;
+}
+.carrusel-contenido h3{
+    font-size: 16px;
+    text-align: center;
+
+}
+
+
+
+
+
